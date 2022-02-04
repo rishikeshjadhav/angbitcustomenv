@@ -9,7 +9,7 @@ export class AngmatenvExtension {
   static async provider([envs, angular]: [EnvsMain, AngularV13Main]) {
     // Use any of the "angular.override..." transformers, for example:
     const compilerOptions = await angular.overrideCompilerOptions({
-      fullTemplateTypeCheck: false
+      // fullTemplateTypeCheck: false
     });
     const AngmatenvEnv = angular.compose([compilerOptions])
     envs.registerEnv(AngmatenvEnv)

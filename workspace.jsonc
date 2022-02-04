@@ -39,7 +39,7 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "@teambit/toolbox.performance.v8-cache": "0.0.18"
+        "@teambit/angular-v13": "0.0.19"
       },
       "peerDependencies": {}
     },
