@@ -38,7 +38,9 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@teambit/toolbox.performance.v8-cache": "0.0.18"
+      },
       "peerDependencies": {}
     },
     "nodeLinker": "hoisted"
@@ -51,14 +53,17 @@
    * see https://harmony-docs.bit.dev/aspects/variants for more info.
    **/
   "teambit.workspace/variants": {
+    "scope/angmatenv": {
+      "teambit.harmony/aspect": {}
+    },
     "*": {
-      "teambit.angular/angular-v13@0.0.19": {}
+      "scope/angmatenv": {}
     }
   },
   "teambit.angular/angular-v13@0.0.19": {},
   "teambit.generator/generator": {
     "aspects": [
-      "teambit.angular/angular-v13@0.0.19"
+      "scope/angmatenv"
     ]
   }
 }
